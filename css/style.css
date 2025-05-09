@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .navbar {
   position: sticky;
   top: 0;
@@ -198,7 +201,6 @@
 
 .who-we-are .small-title {
   color: #F97316;
-  /* Orange color */
 }
 
 .who-we-are h2 {
@@ -207,53 +209,47 @@
 
 .image-grid {
   position: relative;
+  text-align: center;
 }
 
-.image-grid .top-img {
-  width: 90%;
-  /* Image 1 apni jagah par full width */
-  border-radius: 8px;
-}
-
-.image-grid .bottom-images {
-  display: flex;
-  margin-top: -50px;
-  /* Image 2 ko upar kheench diya */
-}
-
+.image-grid .top-img,
 .image-grid .small-img {
   border-radius: 8px;
 }
 
+.image-grid .top-img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.image-grid .bottom-images {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
 .image-grid .small-img:first-child {
   width: 55%;
-  /* Image 2 (left wali) normal size */
   margin-right: 10px;
 }
 
 .image-grid .small-img:last-child {
   width: 35%;
-  height: auto;
   max-height: 220px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  /* Center horizontally */
   margin-top: 10%;
-  /* Top se thoda neeche karega */
 }
 
 .image-grid .tall-img {
   width: 60%;
-  height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto;
   margin-top: -60px;
   margin-left: -50px;
 }
-
-
 
 .btn-primary {
   border-radius: 8px;
@@ -266,18 +262,38 @@
   background-color: #0b5ed7;
 }
 
+/* ✅ Responsive Fix Starts Here */
 @media (max-width: 767px) {
-  .image-grid .bottom-images {
-    flex-direction: column;
-    margin-top: 0;
-    /* Mobile pe normal ho jayega */
+  .image-grid .top-img,
+  .image-grid .small-img,
+  .image-grid .tall-img {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto 15px auto !important;
+    display: block;
   }
 
-  .image-grid .small-img {
-    width: 100% !important;
-    margin-bottom: 10px;
+  .image-grid .bottom-images {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0 !important;
+  }
+
+  .image-grid .small-img:first-child,
+  .image-grid .small-img:last-child {
+    margin: 0 auto 15px auto !important;
+  }
+
+  .image-grid .tall-img {
+    margin: 0 auto 15px auto !important;
+  }
+
+  /* 🚫 Yeh disable kar do mobile pe */
+  .image-grid {
+    overflow-x: hidden;
   }
 }
+
 
 /* who-we-are style end */
 
@@ -592,7 +608,7 @@
 
 /* clint section start */
 .clint-section {
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 .client-logo {
@@ -625,12 +641,13 @@
 /*  Recognition section start */
 .Recognition-section {
   /* background-color: #0077b6; */
-  background: linear-gradient(135deg, #0077b6, #ffc107);
+  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
+  background-color: #fff;
 }
 
 h2.section-title {
   text-align: center;
-  color: white;
+  color: orange;
   font-weight: bold;
   padding: 40px 0 20px;
   font-size: 2.5rem;
@@ -682,8 +699,8 @@ h2.section-title {
 
 /* TESTPAN Certificates section start */
 #certificates {
-  background-color: #f9f9f9;
-  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
+  /* background-color: #f9f9f9; */
+  background: linear-gradient(135deg, #0077b6, #ffc107);
 
 }
 
@@ -727,8 +744,8 @@ h2.section-title {
   padding: 60px 0;
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
   /* background-color: #0077b6; */
-  background-color: #fff;
-  color: #fff;
+  background-color: #f9f9f9;
+  color: orange;
 }
 
 .advisor-section h2 {
@@ -791,7 +808,8 @@ h2.section-title {
 
 /*  Our Presence Section start */
 .our-presence {
-  background: linear-gradient(135deg, #0077b6, #ffc107);
+  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
+  background-color: #fff;
   padding: 30px 0px;
 }
 
@@ -816,8 +834,8 @@ h2.section-title {
 }
 
 .flag-row img {
-  width: 40px;
-  height: 30px;
+  width: 50px;
+  height: 40px;
   object-fit: cover;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -851,6 +869,8 @@ h2.section-title {
 /* Future  section start */
 .future-section {
   background-color: #f9f9f9;
+  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
+
 }
 
 .blog-card img {
