@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons (Correct Icons will Display Now ✅) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Heading section start -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo-testpan.png" alt="Testpan Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About
+                            Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Who we are</a></li>
+                            <li><a class="dropdown-item" href="#">Founder CEO MD</a></li>
+                            <li><a class="dropdown-item" href="#">Advisors</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Examination Delivery</a></li>
+                            <li><a class="dropdown-item" href="#">Assessment Solutions</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clients</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">2023 Awards</a></li>
+                            <li><a class="dropdown-item" href="#">2022 Awards</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrepreneurship</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Photos</a></li>
+                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+
+                    <!-- Search Icon -->
+                    <li class="nav-item ms-2">
+                        <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"></i>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-box" id="searchBox">
+                <input type="text" placeholder="Search...">
+            </div>
+
+        </div>
+    </nav>
+    <!-- Heading section end -->
+
+    <!-- Hero Section start-->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active"
+                    data-text="Expert Secure & Reliable Solution For Examination Delivery">
+                    <img src="./assets/slide3.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-item"
+                    data-text="Global Network of College and Universities With Start-of-the-Art Facilities">
+                    <img src="./assets/slides-4.jpg" alt="Slide 2">
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Overlay Text -->
+            <div class="hero-content">
+                <h1>Expert Secure & Reliable Solution For Examination Delivery</h1>
+                <button class="hero-btn">DOWNLOADE BROCHURE</button>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end  -->
+
+    <!-- who we are section start -->
+    <section class="who-we-are py-5 who-we-are-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side (Images) -->
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="image-grid">
+                        <img src="./assets/Photo-2.jpg" alt="Image 1" class="img-fluid top-img mb-3">
+                        <div class="bottom-images">
+                            <img src="./assets/Photo-3.jpg" alt="Image 2" class="img-fluid small-img tall-img">
+                            <img src="./assets/Photo-1.jpg" alt="Image 3" class="img-fluid small-img">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Right Side (Text Content) -->
+                <div class="col-lg-6">
+                    <p class="small-title text-orange fw-bold mb-2">WHO WE ARE</p>
+                    <h2 class="mb-3">About TESTPAN India</h2>
+                    <p class="mb-3">Founded in early 2016 and recognized as a Startup Company by the Department for
+                        Promotion for Industry & Internal Trade (DPIIT), TESTPAN India has been a pioneer in providing
+                        examination delivery, process and assessment solutions, and infrastructural support to
+                        Educational Institutions, Government/Public Sector and Corporates.</p>
+                    <p class="mb-4">TESTPAN India is a trusted examination delivery and infrastructure provider in the
+                        public and private sectors. On their behalf, we securely deliver a reliable, convenient and
+                        hassle-free examination experience to those seeking to improve their lives by starting a new
+                        career or developing skills/qualifications for professional development.</p>
+
+                    <!-- Accordion -->
+                    <div class="accordion mb-3" id="knowMoreAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    Know More
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#knowMoreAccordion">
+                                <div class="accordion-body">
+                                    TESTPAN India also offers customized exam solutions, online assessments, and
+                                    proctoring services to cater to the specific needs of institutions and
+                                    organizations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Test Center Registration Button -->
+                    <button class="btn btn-primary">
+                        Test Center Registration <i class="bi bi-arrow-right-circle ms-1"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- who we are section end  -->
+
+    <!-- purpose section start -->
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <p class="text-uppercase fw-bold" style="color: #f7941d;">Our Purpose</p>
+            <h2 class="fw-bold">The TESTPAN India Philosophy</h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Vision -->
+            <div class="col-md-4">
+                <div class="purpose-box border-secondary">
+                    <h5 class="purpose-title">Vision</h5>
+                    <p>Become the preferred and reliable partner in the global examination delivery ecosystem, providing
+                        the best-in-class service, infrastructure and manpower through state-of-the-art technology,
+                        standardized examination delivery, and a customer-centric approach facilitating stellar
+                        performance of examination takers.</p>
+                </div>
+            </div>
+
+            <!-- Mission -->
+            <div class="col-md-4">
+                <div class="purpose-box border-secondary">
+                    <h5 class="purpose-title">Mission</h5>
+                    <p>Providing high quality, trusted and standardized examination experience through reliable centres
+                        globally, with connectivity, security and futuristic hi-tech solutions, infrastructure and
+                        manpower that guarantee a level playing field for all examination takers.</p>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="col-md-4">
+                <div class="purpose-box border-secondary">
+                    <h5 class="purpose-title">Values</h5>
+                    <p>Our Values are fundamental to our organization's culture and behaviors and serve as a reinforcing
+                        bedrock to our commitment towards quality, standardization and reliability.</p>
+
+                    <div class="values-icons">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div>
+                                <strong>Customer-centric</strong><br>
+                                <small>Putting customers first</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <div>
+                                <strong>Trustworthy</strong><br>
+                                <small>Your trusted partner</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="fa-solid fa-futbol"></i>
+                            <div>
+                                <strong>Futuristic</strong><br>
+                                <small>Leading with vision</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- purpose section end -->
+
+    <!-- experience-section start -->
+    <section class="experience-section text-center">
+        <div class="container">
+            <h2 class="mb-5">The TESTPAN Experience</h2>
+            <div class="row justify-content-center">
+
+                <!-- Countries -->
+                <div class="col-6 col-md-2 counter-item">
+                    <i class="fas fa-flag-checkered"></i>
+                    <h3 class="counter" data-target="17">0</h3>
+                    <p>Countries</p>
+                </div>
+
+                <!-- Cities -->
+                <div class="col-6 col-md-2 counter-item">
+                    <i class="fas fa-map"></i>
+                    <h3 class="counter" data-target="523">0</h3>
+                    <p>Cities</p>
+                </div>
+
+                <!-- Seats -->
+                <div class="col-6 col-md-2 counter-item">
+                    <i class="fas fa-chair"></i>
+                    <h3 class="counter" data-target="672134">0</h3>
+                    <p>Seats</p>
+                </div>
+
+                <!-- Examination Centers -->
+                <div class="col-6 col-md-3 counter-item">
+                    <i class="fas fa-location-dot"></i>
+                    <h3 class="counter" data-target="3587">0</h3>
+                    <p>Examination Centers</p>
+                </div>
+
+                <!-- Active Clients -->
+                <div class="col-6 col-md-2 counter-item">
+                    <i class="fas fa-users"></i>
+                    <h3 class="counter" data-target="61">0</h3>
+                    <p>Active Clients</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- experience-section end -->
+
+    <!-- Founder section start -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left Text -->
+                <div class="col-md-7">
+                    <div class="founder-title">| Founder, CEO & Managing Director</div>
+                    <div class="founder-name">Rajesh Setia</div>
+                    <p class="founder-desc">
+                        Rajesh Setia is a serial entrepreneur and currently the Founder, CEO, and Managing Director of
+                        Testpan India Private Limited. He is responsible for customer reach globally by building
+                        exclusive associates and a channel partner network, and generating online testing business from
+                        corporates, educational bodies & government institutes.
+                    </p>
+                    <p class="founder-desc">
+                        Having experience of 25 years in running a full-fledged private limited company, Rajesh was
+                        formerly the Founder, Managing Partner & Head Business Development of Panacea Testing
+                        (2012-2016), where he developed the unique business idea of booking test centers across India on
+                        a turnkey basis while working with all the online assessment companies.
+                    </p>
+
+                    <!-- Accordion Button -->
+                    <a class="btn-know-more" data-bs-toggle="collapse" href="#moreInfo" role="button"
+                        aria-expanded="false" aria-controls="moreInfo">
+                        <span>+</span> Know More
+                    </a>
+
+                    <!-- Accordion Content -->
+                    <div class="collapse mt-3" id="moreInfo">
+                        <div class="card card-body">
+                            Rajesh Setia has also been honored with multiple awards for his contribution to the online
+                            assessment industry. His vision is to expand Testpan's services globally and make online
+                            assessments more accessible and efficient for organizations worldwide.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Images -->
+                <div class="col-md-5 text-center">
+                    <div class="img-container1 mx-auto">
+                        <img src="./assets/Founder-1.png" alt="Profile" class="profile-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Founder section End -->
+
+    <!-- services-section start  -->
+    <section class="services-section">
+        <div class="container">
+
+            <!-- Heading -->
+            <h6>| WHAT WE DO</h6>
+            <h2>The TESTPAN Services</h2>
+
+            <!-- Cards -->
+            <div class="row justify-content-center g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h5>Examination Delivery</h5>
+                        <ul>
+                            <li>A large global network and inventory of reliable centers</li>
+                            <li>Colleges and universities with state-of-the-art facilities</li>
+                            <li>'Book my test center' App – the one-stop digital solution</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-card">
+                        <div class="service-icon">👥</div>
+                        <h5>Examination Manpower Services</h5>
+                        <ul>
+                            <li>Invigilation Manpower</li>
+                            <li>Administrative Manpower</li>
+                            <li>Technical Manpower</li>
+                            <li>eProctor (for virtual exams)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-card">
+                        <div class="service-icon">🖥️</div>
+                        <h5>Examination Infrastructure Services</h5>
+                        <ul>
+                            <li>IT & server support</li>
+                            <li>Computer hardware</li>
+                            <li>Biometric attendance</li>
+                            <li>CCTV security</li>
+                            <li>Webcam photo</li>
+                            <li>Signage and direction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h5>Examination Auxiliary Services</h5>
+                        <ul>
+                            <li>Additional security requirement</li>
+                            <li>Additional manpower</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- services-section end -->
+
+    <!-- Booking advantage section start -->
+    <section class="booking-section">
+        <div class="container">
+
+            <!-- Heading -->
+            <h4>| book my test center</h4>
+            <h2>The TESTPAN Booking Advantage</h2>
+
+            <!-- Images -->
+            <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap booking-images">
+
+                <!-- Left Mobile App Image -->
+                <img src="./assets/APP.jpeg" alt="Mobile App" class="img-fluid" style="max-width: 200px;">
+
+                <!-- Right Dashboard Image -->
+                <div>
+                    <img src="./assets/Capture.png" alt="Dashboard" class="img-fluid" style="max-width: 700px;">
+                    <p>'book my test center' is a unique, digital-first solution for examination center bookings</p>
+                </div>
+
+            </div>
+
+            <!-- Paragraph -->
+
+        </div>
+    </section>
+    <!-- Booking advantage section end -->
+
+    <!-- app-section start -->
+    <section class="app-section">
+        <div class="container">
+
+            <!-- App Store Buttons -->
+            <div class="app-buttons d-flex justify-content-center flex-wrap ">
+
+                <!-- App Store -->
+                <a href="#">
+                    <img src="./assets/App_Store.svg" alt="App Store" class="store-badge">
+                </a>
+
+                <!-- Google Play -->
+                <a href="#">
+                    <img src="./assets/google-play.webp" alt="Google Play" class="store-badge">
+                </a>
+
+            </div>
+
+            <!-- Text -->
+            <p>The new iOS & Android App. Available at App and Google Store.</p>
+
+            <!-- Visit Website Button -->
+            <a href="#" class="btn btn-primary visit-btn">
+                Click here to Visit BookMyTestCenter Website <i class="fas fa-arrow-circle-right"></i>
+            </a>
+
+        </div>
+    </section>
+    <!-- app-section end -->
+
+    <!-- clint section start -->
+    <section class="text-center my-5 clint-section">
+        <div class="container">
+            <h2>The TESTPAN Clients</h2>
+
+
+            <div id="clientSlider" class="d-flex justify-content-center align-items-center overflow-hidden my-4"
+                style="max-width: 100%; gap: 30px;">
+                <img src="./assets/company-1.png" class="client-logo" alt="Client 1">
+                <img src="./assets/company-2.png" class="client-logo" alt="Client 2">
+                <img src="./assets/company-3.png" class="client-logo" alt="Client 3">
+                <img src="./assets/company-4.png" class="client-logo" alt="Client 4">
+                <img src="./assets/company-5.png" class="client-logo" alt="Client 5">
+                <img src="./assets/company-6.png" class="client-logo" alt="Client 5">
+                <img src="./assets/company-7.png" class="client-logo" alt="Client 5">
+                <img src="./assets/company-8.png" class="client-logo" alt="Client 5">
+                <img src="./assets/company-9.png" class="client-logo" alt="Client 5">
+                <img src="./assets/company-10.png" class="client-logo" alt="Client 5">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="btn btn-warning" id="moreBtn">More Clients ➔</button>
+        </div>
+    </section>
+    <!-- clint section end -->
+
+    <!-- Recognition section start -->
+    <div class="Recognition-section">
+        <div class="container py-5">
+            <h2 class="section-title">The TESTPAN Recognition</h2>
+            <div class="row g-4">
+                <!-- Repeat this block for each image -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img1.jpg" class="award-img" alt="Award 1">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img2.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img3.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img4.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img5.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img6.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img7.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img8.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-1 hidden-row" id="moreAwards">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img9.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img10.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img11.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img12.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img13.jpeg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img14.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img15.jpeg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="award-card">
+                        <img src="./assets/award/img16.jpg" class="award-img" alt="Award 2">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-toggle" id="toggleButton">View More</button>
+        </div>
+    </div>
+    <!-- Recognition section end -->
+
+    <!-- TESTPAN Certificates section start -->
+    <section id="certificates" class="py-5 text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold display-6 certificate-header">🏅 The TESTPAN Certificates</h2>
+            <p class="mb-5 text-muted">Recognized excellence from top national and international authorities.</p>
+
+            <div class="row g-4 justify-content-center" id="certificateGrid">
+                <!-- Certificate Items -->
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-1.jpg" class="card-img-top img-fluid" alt="Certificate 1">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-2.jpg" class="card-img-top img-fluid" alt="Certificate 2">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-3.png" class="card-img-top img-fluid" alt="Certificate 3">
+                    </div>
+                </div>
+                <!-- 👇 Add more items below -->
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-4.png" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <!-- Repeat as needed -->
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-5.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-6.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-7.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-8.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-9.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-10.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-10.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 certificate-item">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="./assets/certificate/img-11.jpg" class="card-img-top img-fluid" alt="Certificate 4">
+                    </div>
+                </div>
+            </div>
+
+            <button id="loadMoreCertificates" class="btn btn-primary mt-4">Show More</button>
+        </div>
+    </section>
+    <!-- TESTPAN Certificates section end -->
+
+    <!-- TESTPAN Advisors start -->
+    <section class="advisor-section text-center">
+        <div class="container">
+            <p class="text-uppercase text-white mb-2">| Our Guiding Lights</p>
+            <h2 class="mb-5">The TESTPAN Advisors</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="advisor-card">
+                        <img src="./assets/Advisor/img-1.jpg" class="w-100 advisor-img" alt="Advisor 1">
+                        <div class="p-3">
+                            <h5 class="advisor-name">Meenakshi Setia</h5>
+                            <div class="icon-buttons">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="advisor-card">
+                        <img src="./assets/Advisor/img-2.jpg" class="w-100 advisor-img" alt="Advisor 2">
+                        <div class="p-3">
+                            <h5 class="advisor-name">Dr Aditya Vij</h5>
+                            <div class="icon-buttons">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="advisor-card">
+                        <img src="./assets/Advisor/img-3.jpg" class="w-100 advisor-img" alt="Advisor 3">
+                        <div class="p-3">
+                            <h5 class="advisor-name">Manjul Trehan</h5>
+                            <div class="icon-buttons">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="advisor-card">
+                        <img src="./assets/Advisor/img-4.jpg" class="w-100 advisor-img" alt="Advisor 4">
+                        <div class="p-3">
+                            <h5 class="advisor-name">Sahib Babbar</h5>
+                            <div class="icon-buttons">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- TESTPAN Advisors end -->
+
+    <!-- Our Presence Section start -->
+    <div class="our-presence">
+        <div class="container text-center">
+
+            <div class="presence-header">Our presence</div>
+
+            <!-- Flag Row -->
+            <div class="flag-row">
+                <img src="https://flagcdn.com/in.svg" alt="India">
+                <img src="https://flagcdn.com/bd.svg" alt="Bangladesh">
+                <img src="https://flagcdn.com/bt.svg" alt="Bhutan">
+                <img src="https://flagcdn.com/lk.svg" alt="Sri Lanka">
+                <img src="https://flagcdn.com/np.svg" alt="Nepal">
+                <img src="https://flagcdn.com/ae.svg" alt="UAE">
+                <img src="https://flagcdn.com/om.svg" alt="Oman">
+            </div>
+
+            <!-- Stat Cards Grid -->
+            <div class="row">
+
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <div class="count">61</div>
+                        Clients
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <div class="count">105</div>
+                        Projects in 2023-24
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <div class="count">116470</div>
+                        Capacity
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <div class="count">2296</div>
+                        Professionals
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <div class="count">510</div>
+                        Cities
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <div class="count">3652</div>
+                        Venues
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Our Presence Section end -->
+
+
+    <!-- Future  section start -->
+    <div class="future-section">
+        <div class="container my-5">
+            <div class="row">
+
+                <!-- CARD 1 -->
+                <div class="col-md-4 blog-card">
+                    <img src="./assets/services-img1.jpg" alt="Blog Image">
+                    <h6>Enhancing Exam Venues: Best Practices for Creating the Perfect Testing Environment</h6>
+                    <p><small>August 25, 2023 / No Comments</small></p>
+                    <p>Designing an optimal exam venue is crucial to ensure that candidates can perform at their best...
+                    </p>
+                    <a href="#" class="read-more">Read More »</a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-md-4 blog-card">
+                    <img src="./assets/services-img2.jpg" alt="Blog Image">
+                    <h6>How Innovations and Technology are Shaping the Future of Examinations</h6>
+                    <p><small>August 21, 2023 / No Comments</small></p>
+                    <p>Technology is changing the way we conduct exams, bringing in new challenges and opportunities...
+                    </p>
+                    <a href="#" class="read-more">Read More »</a>
+                </div>
+                <!-- CARD 3 -->
+                <div class="col-md-4 blog-card">
+                    <img src="./assets/services-img3.jpg" alt="Blog Image">
+                    <h6>Mastering Examination Administration: Key Steps for Online and Offline Assessments</h6>
+                    <p><small>August 18, 2023 / No Comments</small></p>
+                    <p>In today's tech-driven world, organizing an exam requires thorough planning and smart tools...
+                    </p>
+                    <a href="#" class="read-more">Read More »</a>
+                </div>
+                <!-- CARD 4 -->
+                <div class="col-md-4 blog-card">
+                    <img src="./assets/services-img4.jpg" alt="Blog Image">
+                    <h6>Optimizing Examination Centres: Creating the Perfect Testing Environment</h6>
+                    <p><small>March 17, 2023 / No Comments</small></p>
+                    <p>This environment must be optimized for candidates’ psychological and physiological well-being...
+                    </p>
+                    <a href="#" class="read-more">Read More »</a>
+                </div>
+                <!-- CARD 5 -->
+                <div class="col-md-4 blog-card">
+                    <img src="./assets/services-img5.jpg" alt="Blog Image">
+                    <h6>Streamlining Examination Management and Delivery</h6>
+                    <p><small>March 13, 2022 / No Comments</small></p>
+                    <p>The education industry is constantly evolving, and so is the need for streamlined delivery...</p>
+                    <a href="#" class="read-more">Read More »</a>
+                </div>
+                <!-- CARD 6 -->
+                <div class="col-md-4 blog-card">
+                    <img src="./assets/services-img6.jpg" alt="Blog Image">
+                    <h6>The Future of Conducting Examinations: Trends and Innovations</h6>
+                    <p><small>March 5, 2022 / No Comments</small></p>
+                    <p>COVID-19 has impacted education & forced institutions to adopt new methods of assessment...</p>
+                    <a href="#" class="read-more">Read More »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Future  section end -->
+
+    <!-- Footer section start -->
+    <div class="upper-footer">
+
+        <!-- Left Box -->
+        <div class="left-box">
+            <a href="#" class="footer-btn">
+                Test Center Registration <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Right Box -->
+        <div class="right-box">
+            <a href="#" class="footer-btn">
+                Enquiry Form <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Main footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-center">
+
+                <!-- Left Logos -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="./assets/footer-logo.png" alt="book my test center" class="img-fluid mb-2"
+                        style="max-width: 200px;">
+                    <p class="mb-1">Powered by</p>
+                    <img src="./assets/logo-testpan.png" alt="Testpan" class="img-fluid" style="max-width: 200px;">
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Our Services</h5>
+                    <ul class="services mt-3 p-0">
+                        <li>Examination Delivery</li>
+                        <li>Examination Manpower Services</li>
+                        <li>Examination Infrastructure Services</li>
+                        <li>Examination Auxiliary Services</li>
+                    </ul>
+                </div>
+
+                <!-- Address -->
+                <div class="col-md-4 address-box">
+                    <h5>Address</h5>
+                    <p class="mt-3 mb-3"><i class="fa-solid fa-location-dot me-3"></i> Corporate Office: 1390/7, 2nd
+                        Floor (Above MTNL
+                        Exchange), Pankha Road, Nangal Raya, New Delhi - 110046, India</p>
+                    <p class="mb-3"><i class="fa-solid fa-location-dot me-3"></i>Registered Office: D-1/2, First Floor,
+                        Janak Puri, New Delhi 110058, India</p>
+                    <p class="mb-3"><i class="fa-solid fa-envelope me-3"></i> info@testpanindia.com</p>
+                    <p class="mb-3"><i class="fa-solid fa-phone-volume me-3"></i> (+91) 981 014 7334</p>
+                    <p><i class="fa-solid fa-list-ol me-3"></i> (+91) 11-28520481 | (+91) 11-44748200</p>
+
+                    <div class="social-icons mt-2">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="row mt-4 footer-bottom text-center text-md-start">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    © TESTPAN India 2023 | all rights reserved
+                </div>
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <span>Visitor Counter</span><br>
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=6&type=ip&initCount=65163"
+                        title="Visitor Counter" alt="Visitor Counter">
+
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <!--  -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
