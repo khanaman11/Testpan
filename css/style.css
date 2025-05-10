@@ -254,12 +254,12 @@ body{
 .btn-primary {
   border-radius: 8px;
   padding: 10px 20px;
-  background-color: #0d6efd;
+  background-color: #0081c3;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #0b5ed7;
+  background-color: #0081c3;
 }
 
 /* ✅ Responsive Fix Starts Here */
@@ -342,7 +342,8 @@ body{
 /* experience-section style start */
 .experience-section {
   /* background-color: #f9f9f9; */
-  background: linear-gradient(135deg, #0077b6, #ffc107);
+  background-color:#0081c3;
+  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
   padding: 60px 0;
   color: #fff;
   position: relative;
@@ -461,8 +462,8 @@ body{
 
 /* services-section start */
 .services-section {
-  /* background-color: #0082c8; */
-  background-color: #fff;
+  background-color: #0081C3;
+  /* background-color: #fff; */
   padding: 60px 0;
   color: #fff;
   text-align: center;
@@ -484,7 +485,7 @@ body{
 }
 
 .service-card {
-  background-color: #DDD;
+  background-color: #fff;
   color: #000;
   padding: 30px;
   border-radius: 8px;
@@ -531,7 +532,8 @@ body{
 .booking-section {
   padding: 60px 0;
   text-align: center;
-  background: linear-gradient(135deg, #0077b6, #ffc107);
+  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
+  background-color: #f9f9f9;
 
 }
 
@@ -578,7 +580,7 @@ body{
 
 /* clint section start */
 .clint-section {
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 .client-header{
   color: orange;
@@ -632,7 +634,7 @@ body{
 .Recognition-section {
   /* background-color: #0077b6; */
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
-  background-color: #fff;
+  background-color: #0081C3;
 }
 
 h2.section-title {
@@ -689,8 +691,8 @@ h2.section-title {
 
 /* TESTPAN Certificates section start */
 #certificates {
-  /* background-color: #f9f9f9; */
-  background: linear-gradient(135deg, #0077b6, #ffc107);
+  background-color: #fff;
+  /* background: linear-gradient(135deg, #0077b6, #ffc107); */
 
 }
 
@@ -740,8 +742,8 @@ h2.section-title {
 .advisor-section {
   padding: 60px 0;
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
-  /* background-color: #0077b6; */
-  background-color: #f9f9f9;
+  background-color: #0081C3;
+  /* background-color: #f9f9f9; */
   color: orange;
 }
 
