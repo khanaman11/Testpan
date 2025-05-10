@@ -460,26 +460,37 @@
     <!-- clint section start -->
     <section class="text-center py-5 clint-section">
         <div class="container">
-            <h2>The TESTPAN Clients</h2>
-
-
-            <div id="clientSlider" class="d-flex justify-content-center align-items-center overflow-hidden my-4"
-                style="max-width: 100%; gap: 30px;">
-                <img src="./assets/company-1.png" class="client-logo" alt="Client 1">
-                <img src="./assets/company-2.png" class="client-logo" alt="Client 2">
-                <img src="./assets/company-3.png" class="client-logo" alt="Client 3">
-                <img src="./assets/company-4.png" class="client-logo" alt="Client 4">
-                <img src="./assets/company-5.png" class="client-logo" alt="Client 5">
-                <img src="./assets/company-6.png" class="client-logo" alt="Client 5">
-                <img src="./assets/company-7.png" class="client-logo" alt="Client 5">
-                <img src="./assets/company-8.png" class="client-logo" alt="Client 5">
-                <img src="./assets/company-9.png" class="client-logo" alt="Client 5">
-                <img src="./assets/company-10.png" class="client-logo" alt="Client 5">
-                <!-- Add more images as needed -->
-            </div>
-            <button class="btn btn-warning" id="moreBtn">More Clients ➔</button>
+          <h2 class="client-header">The TESTPAN Clients</h2>
+    
+          <!-- Slider Section -->
+          <div id="clientSlider" class="d-flex justify-content-center align-items-center overflow-hidden my-4"
+            style="max-width: 100%; gap: 30px;">
+            <img src="./assets/company-1.png" class="client-logo" alt="Client 1">
+            <img src="./assets/company-2.png" class="client-logo" alt="Client 2">
+            <img src="./assets/company-3.png" class="client-logo" alt="Client 3">
+            <img src="./assets/company-4.png" class="client-logo" alt="Client 4">
+            <img src="./assets/company-5.png" class="client-logo" alt="Client 5">
+            <img src="./assets/company-6.png" class="client-logo" alt="Client 6">
+            <img src="./assets/company-7.png" class="client-logo" alt="Client 7">
+            <img src="./assets/company-8.png" class="client-logo" alt="Client 8">
+            <img src="./assets/company-9.png" class="client-logo" alt="Client 9">
+            <img src="./assets/company-10.png" class="client-logo" alt="Client 10">
+          </div>
+    
+          <!-- Hidden More Clients Section -->
+          <div id="moreClients" class="more-clients">
+            <img src="./assets/company-11.png" alt="Client 11">
+            <img src="./assets/company-12.png" alt="Client 12">
+            <img src="./assets/company-13.png" alt="Client 13">
+            <img src="./assets/company-14.png" alt="Client 14">
+            <img src="./assets/company-15.png" alt="Client 15">
+            <!-- Add more images if needed -->
+          </div>
+    
+          <!-- Toggle Button -->
+          <button class="btn btn-warning mt-4" id="moreBtn">More Clients ➔</button>
         </div>
-    </section>
+      </section>
     <!-- clint section end -->
 
     <!-- Recognition section start -->
@@ -649,7 +660,7 @@
                 </div>
             </div>
 
-            <button id="loadMoreCertificates" class="btn btn-primary mt-4">Show More</button>
+            <button id="loadMoreCertificates" class="btn mt-4 certificate-btn">Show More</button>
         </div>
     </section>
     <!-- TESTPAN Certificates section end -->
@@ -896,12 +907,12 @@
 
                         <!-- App Store -->
                         <a href="#">
-                            <img src="./assets/App_Store.svg" alt="App Store" class="store-badge">
+                            <img src="./assets/App_Store.svg" alt="App Store" class="store-badge" width="160px">
                         </a>
         
                         <!-- Google Play -->
                         <a href="#">
-                            <img src="./assets/google-play.webp" alt="Google Play" class="store-badge">
+                            <img src="./assets/google-play.webp" alt="Google Play" class="store-badge" width="160px">
                         </a>
         
                     </div>

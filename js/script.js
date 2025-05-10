@@ -105,8 +105,14 @@ counters.forEach(counter => {
 
 
 // /////////////// clint section 
-document.getElementById("moreBtn").addEventListener("click", function () {
-  window.open("all-clients.html", "_blank"); // New tab me khulega
+const moreBtn = document.getElementById('moreBtn');
+const moreClients = document.getElementById('moreClients');
+let isVisible = false;
+
+moreBtn.addEventListener('click', () => {
+  isVisible = !isVisible;
+  moreClients.style.display = isVisible ? 'flex' : 'none';
+  moreBtn.innerText = isVisible ? 'Hide Clients ▲' : 'More Clients ➔';
 });
 ///////////////// clint section
 
