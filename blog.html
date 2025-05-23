@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons (Correct Icons will Display Now ✅) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style>
+        .blog-card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.meta-info i {
+  color: red;
+  margin-right: 5px;
+}
+
+.read-more {
+  background: #f44336;
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.read-more:hover {
+  background: #d32f2f;
+}
+
+.share i {
+  color: #007bff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.share i:hover {
+  color: #f44336;
+}
+
+.search-section,
+.recent-posts {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.search-section h5,
+.recent-posts h5 {
+  border-left: 4px solid #f44336;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding-right: 40px;
+  border-radius: 8px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f44336;
+  cursor: pointer;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+.post-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.post-item h6 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.post-item p {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+.search-tab {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+
+}
+
+.search-tab li a {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+.active-tab {
+  background-color: #FD4A36;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #FD4A36;
+  color: #fff;
+}
+
+@media(max-width: 576px) {
+  .post-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-item img {
+    margin-bottom: 8px;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo-testpan.png" alt="Testpan Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#heroSection">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About
+                            Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#whoSection">Who we are</a></li>
+                            <li><a class="dropdown-item" href="#founderSection">Founder CEO MD</a></li>
+                            <li><a class="dropdown-item" href="#advisors">Advisors</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Services">Examination Delivery</a></li>
+                            <li><a class="dropdown-item" href="#Services">Invigilation Manpower</a></li>
+                            <li><a class="dropdown-item" href="#Services">Assessment Solutions</a></li>
+                            <li><a class="dropdown-item" href="#Services">Examination Infrastructure</a></li>
+                            <li><a class="dropdown-item" href="#Services">Examination Auxiliary Services</a></li>
+                            <li><a class="dropdown-item" href="#bookingSection">book my test center</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clientSection">Clients</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#recognitionSection">Recognition</a></li>
+                            <li><a class="dropdown-item" href="#certificates">Certificates</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Entrepreneurship.html" target="_blank">Entrepreneurship</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html" target="_blank">Blogs</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./examnation_center.html" target="_blank">Examination
+                                    Center</a></li>
+                            <li><a class="dropdown-item" href="./Awards.html" target="_blank">Awards</a></li>
+                            <li><a class="dropdown-item" href="./Exhibitions.html" target="_blank">Exhibitions</a></li>
+                            <li><a class="dropdown-item" href="./Media.html" target="_blank">Media</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html" target="_blank">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- social icon -->
+            <div class="social-icons d-flex gap-3 navbar-social-icon">
+                <a href="linkedin.com/company/testpan-india-private-limited/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/testpan"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/testpanindia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/testpanindia"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@testpanindiaprivatelimited5851"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- blog -->
+    <div class="container my-5">
+        <div class="blog-section-1">
+            <img src="./assets/Blog/blog1.jpg" alt="Banner" class="blog-image">
+
+            <div class="blog-card">
+                <div class="d-flex flex-wrap align-items-center meta-info mb-2">
+                    <small class="me-3"><i class="fa-solid fa-folder"></i> Uncategorized</small>
+                    <small class="me-3"><i class="fa-solid fa-user"></i> By Digital Testpan India</small>
+                    <small><i class="fa-solid fa-calendar-days"></i> August 26, 2024</small>
+                </div>
+
+                <h2 class="fw-bold my-4 lh-base">Enhancing Exam Venues: Best Practices for Creating the Perfect Testing
+                    Environment</h2>
+                <p class="mt-2 mb-4">Enhancing Exam Venues: Best Practices for Creating the Perfect Testing Environment
+                    Designing
+                    an optimal exam venue is crucial to ensuring that candidates can perform at their best. The right
+                    environment
+                    can significantly impact their concentration and overall</p>
+
+
+                <div class="share mt-5 text-end d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="read-more">Read More <i
+                                class="fa-solid fa-arrow-right ms-1 text-white"></i></button>
+                    </div>
+                    <div>
+                        <small class="me-2">Share :</small>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-section-2 mt-5">
+            <img src="./assets/Blog/blog2.jpg" alt="Banner" class="blog-image">
+
+            <div class="blog-card">
+                <div class="d-flex flex-wrap align-items-center meta-info mb-2">
+                    <small class="me-3"><i class="fa-solid fa-folder"></i> Uncategorized</small>
+                    <small class="me-3"><i class="fa-solid fa-user"></i> By Digital Testpan India</small>
+                    <small><i class="fa-solid fa-calendar-days"></i> August 26, 2024</small>
+                </div>
+
+                <h2 class="fw-bold my-4 lh-base">How Innovations and Technology are Shaping the Future of Examinations</h2>
+                <p class="mt-2 mb-4">How Innovations and Technology are Shaping the Future of Examinations The way we conduct exams is undergoing a major transformation, driven by technological advancements and changing needs. As traditional methods evolve, new innovations are reshaping the examination</p>
+
+
+                <div class="share mt-5 text-end d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="read-more">Read More <i
+                                class="fa-solid fa-arrow-right ms-1 text-white"></i></button>
+                    </div>
+                    <div>
+                        <small class="me-2">Share :</small>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-section-3 mt-5">
+            <img src="./assets/Blog/blog3.jpg" alt="Banner" class="blog-image">
+
+            <div class="blog-card">
+                <div class="d-flex flex-wrap align-items-center meta-info mb-2">
+                    <small class="me-3"><i class="fa-solid fa-folder"></i> Uncategorized</small>
+                    <small class="me-3"><i class="fa-solid fa-user"></i> By Digital Testpan India</small>
+                    <small><i class="fa-solid fa-calendar-days"></i> August 26, 2024</small>
+                </div>
+
+                <h2 class="fw-bold my-4 lh-base">Mastering Examination Administration: Key Steps for Online and Offline Assessments</h2>
+                <p class="mt-2 mb-4">Mastering Examination Administration: Key Steps for Online and Offline Assessments In today’s tech-driven world, exams have largely gone digital, bringing flexibility and convenience but also new challenges. Organizing an exam, whether online or offline, requires thorough planning,</p>
+
+
+                <div class="share mt-5 text-end d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="read-more">Read More <i
+                                class="fa-solid fa-arrow-right ms-1 text-white"></i></button>
+                    </div>
+                    <div>
+                        <small class="me-2">Share :</small>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-section-4 mt-5">
+            <img src="./assets/Blog/blog4.jpg" alt="Banner" class="blog-image">
+
+            <div class="blog-card">
+                <div class="d-flex flex-wrap align-items-center meta-info mb-2">
+                    <small class="me-3"><i class="fa-solid fa-folder"></i> Uncategorized</small>
+                    <small class="me-3"><i class="fa-solid fa-user"></i> By Digital Testpan India</small>
+                    <small><i class="fa-solid fa-calendar-days"></i> August 26, 2024</small>
+                </div>
+
+                <h2 class="fw-bold my-4 lh-base">Optimizing Examination Centres: Creating the Perfect Testing Environment</h2>
+                <p class="mt-2 mb-4">Creating a perfect testing environment is essential for any examination. This environment must be optimized for candidates’ psychological and physiological well-being so that they perform at their best.</p>
+
+
+                <div class="share mt-5 text-end d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="read-more">Read More <i
+                                class="fa-solid fa-arrow-right ms-1 text-white"></i></button>
+                    </div>
+                    <div>
+                        <small class="me-2">Share :</small>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+
+            <!-- Search Section -->
+            <ul class="search-tab">
+                <li><a href="#" class="active-tab tab">1</a></li>
+                <li><a href="#" class="tab">2</a></li>
+                <li><a href="#" class="tab"><i class="fa-solid fa-arrow-right-long"></i></a></li>
+            </ul>
+            <div class="search-section">
+                <h5>Search</h5>
+                <div class="search-box">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+            </div>
+
+            <!-- Recent Posts Section -->
+            <div class="recent-posts">
+                <h5>Recent Posts</h5>
+
+                <div class="post-item">
+                    <img src="./assets/Blog/resent-blog1.jpg" alt="Post 1">
+                    <div>
+                        <h6>Enhancing Exam Venues: Best Practices for Creating the Perfect Testing Environment</h6>
+                        <p>August 26, 2024</p>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./assets/Blog/resent-blog2.jpg" alt="Post 2">
+                    <div>
+                        <h6>How Innovations and Technology are Shaping the Future of Examinations</h6>
+                        <p>August 26, 2024</p>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <img src="./assets/Blog/resent-blog3.jpg" alt="Post 3">
+                    <div>
+                        <h6>Mastering Examination Administration: Key Steps for Online and Offline Assessments</h6>
+                        <p>August 26, 2024</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="upper-footer">
+
+        <!-- Left Box -->
+        <div class="left-box">
+            <a href="#" class="footer-btn">
+                Test Center Registration <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Right Box -->
+        <div class="right-box">
+            <a href="#" class="footer-btn">
+                Enquiry Form <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Main footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-center">
+
+                <!-- Left Logos -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="./assets/footer-logo.png" alt="book my test center" class="img-fluid mb-2"
+                        style="max-width: 200px;">
+                    <p class="mb-1">Powered by</p>
+                    <img src="./assets/logo-testpan.png" alt="Testpan" class="img-fluid" style="max-width: 200px;">
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Our Services</h5>
+                    <ul class="services mt-3 p-0">
+                        <li>Examination Delivery</li>
+                        <li>Examination Manpower Services</li>
+                        <li>Examination Infrastructure Services</li>
+                        <li>Examination Auxiliary Services</li>
+                    </ul>
+                    <div class="app-buttons d-flex justify-content-start flex-wrap ">
+
+                        <!-- App Store -->
+                        <a href="#">
+                            <img src="./assets/App_Store.svg" alt="App Store" class="store-badge" width="160px">
+                        </a>
+
+                        <!-- Google Play -->
+                        <a href="#">
+                            <img src="./assets/google-play.webp" alt="Google Play" class="store-badge" width="160px">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="col-md-4 address-box">
+                    <h5>Address</h5>
+                    <p class="mt-3 mb-3"><i class="fa-solid fa-location-dot me-3"></i> Corporate Office: 1390/7, 2nd
+                        Floor (Above MTNL
+                        Exchange), Pankha Road, Nangal Raya, New Delhi - 110046, India</p>
+                    <p class="mb-3"><i class="fa-solid fa-location-dot me-3"></i>Registered Office: D-1/2, First Floor,
+                        Janak Puri, New Delhi 110058, India</p>
+                    <p class="mb-3"><i class="fa-solid fa-envelope me-3"></i> info@testpanindia.com</p>
+                    <p class="mb-3"><i class="fa-solid fa-phone-volume me-3"></i> (+91) 981 014 7334</p>
+                    <p><i class="fa-solid fa-list-ol me-3"></i> (+91) 11-28520481 | (+91) 11-44748200</p>
+
+                    <div class="social-icons mt-2">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="row mt-4 footer-bottom text-center text-md-start">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    © TESTPAN India 2023 | all rights reserved
+                </div>
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <span>Visitor Counter</span><br>
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=6&type=ip&initCount=65163"
+                        title="Visitor Counter" alt="Visitor Counter">
+
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <a href="#">Sitemap</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons (Correct Icons will Display Now ✅) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+  <style>
+    .banner-cnt {
+      background-image: url('./assets/examtion_centers/Untitled-2-1170x760-1-1170x456.png');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      margin: 60px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner-cnt h2{
+      font-size: 50px;
+      color: #fff;
+      font-weight: 700;
+
+    }
+
+    .contact-section {
+      background: linear-gradient(135deg, #0081C3, #F9822C);
+      padding: 60px 0;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-box {
+      /* background-color: rgba(255, 255, 255, 0.1); */
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .left-side-contact h6 {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    .left-side-contact h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .left-side-contact p {
+      font-size: 15px;
+      margin: 20px 0px 30px 0px;
+      color: #000;
+    }
+
+    .left-side-contact a {
+      display: block;
+      background-color: #f9f9f9;
+      color: #0f1b29;
+      padding: 10px;
+      margin: 20px 0;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .right-side-contact h5 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+      background-color: #f9f9f9;
+    }
+
+    .btn-send {
+      background-color: #0f1b29;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+
+    .btn-send:hover {
+      background-color: #ffc107;
+      color: #0f1b29;
+    }
+
+    @media (max-width: 992px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Heading section start -->
+   <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo-testpan.png" alt="Testpan Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#heroSection">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About
+                            Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#whoSection">Who we are</a></li>
+                            <li><a class="dropdown-item" href="#founderSection">Founder CEO MD</a></li>
+                            <li><a class="dropdown-item" href="#advisors">Advisors</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Services">Examination Delivery</a></li>
+                            <li><a class="dropdown-item" href="#Services">Invigilation Manpower</a></li>
+                            <li><a class="dropdown-item" href="#Services">Assessment Solutions</a></li>
+                            <li><a class="dropdown-item" href="#Services">Examination Infrastructure</a></li>
+                            <li><a class="dropdown-item" href="#Services">Examination Auxiliary Services</a></li>
+                            <li><a class="dropdown-item" href="#bookingSection">book my test center</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clientSection">Clients</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#recognitionSection">Recognition</a></li>
+                            <li><a class="dropdown-item" href="#certificates">Certificates</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Entrepreneurship.html">Entrepreneurship</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html" target="_blank">Blogs</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./examnation_center.html" target="_blank">Examination
+                                    Center</a></li>
+                            <li><a class="dropdown-item" href="./Awards.html" target="_blank">Awards</a></li>
+                            <li><a class="dropdown-item" href="./Exhibitions.html" target="_blank">Exhibitions</a></li>
+                            <li><a class="dropdown-item" href="./Media.html" target="_blank">Media</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html" target="_blank">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- social icon -->
+            <div class="social-icons d-flex gap-3 navbar-social-icon">
+                <a href="linkedin.com/company/testpan-india-private-limited/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/testpan"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/testpanindia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/testpanindia"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@testpanindiaprivatelimited5851"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </nav>
+  <!-- Heading section end -->
+
+  <!-- banner-section start -->
+  <div class="banner-cnt">
+    <h2>Contact us</h2>
+  </div>
+  <!-- banner-section end -->
+
+  <!-- contact-form start -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <!-- Left Box -->
+        <div class="contact-box left-side-contact">
+          <h6>Let's Talk</h6>
+          <h2>Speak With Our Consultant</h2>
+          <p>
+            Corporate Office: 1390/7, 2nd Floor, (Above MTNL Exchange),<br />
+            Pankha Road, Nangal Raya, New Delhi – 110046, India<br />
+            (+91) 981 014 7334<br />
+            (+91) 11-28520481 | (+91) 11-44748200
+          </p>
+          <a href="mailto:info@testpanindia.com">info@testpanindia.com</a>
+          <a href="mailto:admin@testpanindia.com">admin@testpanindia.com</a>
+        </div>
+
+        <!-- Right Box -->
+        <div class="contact-box right-side-contact">
+          <h5>Don’t Hesitate To Send Your Message</h5>
+          <form>
+            <input type="text" class="form-control" placeholder="Name" required />
+            <input type="email" class="form-control" placeholder="Email" required />
+            <textarea class="form-control" rows="6" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-send">Send</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- contact-form end -->
+
+  <!-- Footer section start -->
+  <div class="upper-footer">
+
+    <!-- Left Box -->
+    <div class="left-box">
+      <a href="#" class="footer-btn">
+        Test Center Registration <i class="fa-solid fa-circle-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- Right Box -->
+    <div class="right-box">
+      <a href="#" class="footer-btn">
+        Enquiry Form <i class="fa-solid fa-circle-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+
+        <!-- Left Logos -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="./assets/footer-logo.png" alt="book my test center" class="img-fluid mb-2"
+            style="max-width: 200px;">
+          <p class="mb-1">Powered by</p>
+          <img src="./assets/logo-testpan.png" alt="Testpan" class="img-fluid" style="max-width: 200px;">
+        </div>
+
+        <!-- Services -->
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Our Services</h5>
+          <ul class="services mt-3 p-0">
+            <li>Examination Delivery</li>
+            <li>Examination Manpower Services</li>
+            <li>Examination Infrastructure Services</li>
+            <li>Examination Auxiliary Services</li>
+          </ul>
+          <div class="app-buttons d-flex justify-content-start flex-wrap ">
+
+            <!-- App Store -->
+            <a href="#">
+              <img src="./assets/App_Store.svg" alt="App Store" class="store-badge" width="160px">
+            </a>
+
+            <!-- Google Play -->
+            <a href="#">
+              <img src="./assets/google-play.webp" alt="Google Play" class="store-badge" width="160px">
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-4 address-box">
+          <h5>Address</h5>
+          <p class="mt-3 mb-3"><i class="fa-solid fa-location-dot me-3"></i> Corporate Office: 1390/7, 2nd
+            Floor (Above MTNL
+            Exchange), Pankha Road, Nangal Raya, New Delhi - 110046, India</p>
+          <p class="mb-3"><i class="fa-solid fa-location-dot me-3"></i>Registered Office: D-1/2, First Floor,
+            Janak Puri, New Delhi 110058, India</p>
+          <p class="mb-3"><i class="fa-solid fa-envelope me-3"></i> info@testpanindia.com</p>
+          <p class="mb-3"><i class="fa-solid fa-phone-volume me-3"></i> (+91) 981 014 7334</p>
+          <p><i class="fa-solid fa-list-ol me-3"></i> (+91) 11-28520481 | (+91) 11-44748200</p>
+
+          <div class="social-icons mt-2">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="row mt-4 footer-bottom text-center text-md-start">
+        <div class="col-md-6 mb-2 mb-md-0">
+          © TESTPAN India 2023 | all rights reserved
+        </div>
+        <div class="col-md-3 mb-2 mb-md-0">
+          <span>Visitor Counter</span><br>
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=6&type=ip&initCount=65163"
+            title="Visitor Counter" alt="Visitor Counter">
+
+        </div>
+        <div class="col-md-3 text-md-end">
+          <a href="#">Sitemap</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Footer section end -->
+</body>
+
+</html>

@@ -1,16 +1,5 @@
 
-// //////////////// Navbar section start
-const searchIcon = document.getElementById('searchIcon');
-const searchBox = document.getElementById('searchBox');
 
-searchIcon.addEventListener('click', () => {
-  if (searchBox.style.display === 'block') {
-    searchBox.style.display = 'none';
-  } else {
-    searchBox.style.display = 'block';
-  }
-});
-// ///////////////// Navbar section end
 
 
 

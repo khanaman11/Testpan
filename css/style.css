@@ -1,6 +1,7 @@
-body{
+body {
   overflow-x: hidden;
 }
+
 .navbar {
   position: sticky;
   top: 0;
@@ -54,11 +55,11 @@ body{
   width: 120px;
 }
 
-.search-box input {
-  border: 1px solid #0081c3;
-  padding: 5px 10px;
-  border-radius: 5px;
-  outline: none;
+.navbar-social-icon a{
+  cursor: pointer;
+}
+.navbar-social-icon a:hover{
+  color: #C76818;
 }
 
 @media (max-width: 991px) {
@@ -263,6 +264,7 @@ body{
 
 /* ✅ Responsive Fix Starts Here */
 @media (max-width: 767px) {
+
   .image-grid .top-img,
   .image-grid .small-img,
   .image-grid .tall-img {
@@ -341,7 +343,7 @@ body{
 /* experience-section style start */
 .experience-section {
   /* background-color: #f9f9f9; */
-  background-color:#0081c3;
+  background-color: #0081c3;
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
   padding: 60px 0;
   color: #fff;
@@ -548,7 +550,7 @@ body{
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 40px;
-  
+
 }
 
 .booking-images img {
@@ -582,7 +584,8 @@ body{
 .clint-section {
   background-color: #fff;
 }
-.client-header{
+
+.client-header {
   color: #f9822c;
 }
 
@@ -699,10 +702,12 @@ h2.section-title {
 .certificate-header {
   color: #f9822c;
 }
-.certificate-btn{
+
+.certificate-btn {
   background-color: #f9822c;
 }
-.certificate-btn:hover{
+
+.certificate-btn:hover {
   background-color: #0077b6;
   color: #fff;
 }
@@ -751,7 +756,8 @@ h2.section-title {
   /* color: #f9822c; */
   color: #fff;
 }
-.Guiding-light{
+
+.Guiding-light {
   color: #f9822c;
   font-weight: 600;
 }
@@ -907,6 +913,7 @@ h2.section-title {
 
 /* Future  section end */
 
+
 /* Footer section start */
 .upper-footer {
   display: flex;
@@ -928,7 +935,7 @@ h2.section-title {
 }
 
 .right-box {
-  background-color: #f9822c;
+  background-color: #C76818;
   /* Darker Orange */
 }
 
@@ -1024,5 +1031,3 @@ h2.section-title {
   letter-spacing: 2px;
 }
 
-/* Main Footer */
-/* Footer section end */
