@@ -1,7 +1,16 @@
 
+// header-section start
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
 
-
-
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active')); // remove active from all
+            this.classList.add('active'); // add active to clicked one
+        });
+    });
+});
+// Header-section end
 
 // ///////// Hero section script start //////////
 const carousel = document.getElementById('heroCarousel');

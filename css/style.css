@@ -197,6 +197,7 @@ body {
 /* who-we-are style start */
 .who-we-are-section {
   background-color: #f9f9f9;
+  padding: 100px 0px;
 }
 
 .who-we-are .small-title {
@@ -383,7 +384,7 @@ body {
 
 /* Founder section style start */
 .founder-section {
-  padding: 60px 0;
+  padding: 100px 0;
   background-color: #f9f9f9;
 }
 
@@ -465,7 +466,7 @@ body {
 .services-section {
   background-color: #0081C3;
   /* background-color: #fff; */
-  padding: 60px 0;
+  padding: 100px 0;
   color: #fff !important;
   text-align: center;
 }
@@ -531,7 +532,7 @@ body {
 
 /* Booking advantage section start */
 .booking-section {
-  padding: 60px 0;
+  padding: 100px 0;
   text-align: center;
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
   background-color: #f9f9f9;
@@ -583,6 +584,7 @@ body {
 /* clint section start */
 .clint-section {
   background-color: #fff;
+  padding: 100px 0px;
 }
 
 .client-header {
@@ -638,6 +640,7 @@ body {
   /* background-color: #0077b6; */
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
   background-color: #0081C3;
+  padding: 40px 0px;
 }
 
 h2.section-title {
@@ -695,6 +698,7 @@ h2.section-title {
 /* TESTPAN Certificates section start */
 #certificates {
   background-color: #fff;
+  padding: 80px 0px;
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
 
 }
@@ -745,7 +749,7 @@ h2.section-title {
 
 /* TESTPAN Advisors style start */
 .advisor-section {
-  padding: 60px 0;
+  padding: 100px 0;
   /* background: linear-gradient(135deg, #0077b6, #ffc107); */
   background-color: #0081C3;
   /* background-color: #f9f9f9; */
