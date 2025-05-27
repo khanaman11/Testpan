@@ -1,15 +1,16 @@
 
 // header-section start
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.nav-link');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navLinks.forEach(l => l.classList.remove('active')); // remove active from all
-            this.classList.add('active'); // add active to clicked one
-        });
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      navLinks.forEach(l => l.classList.remove('active')); // remove active from all
+      this.classList.add('active'); // add active to clicked one
     });
+  });
 });
+
 // Header-section end
 
 // ///////// Hero section script start //////////
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //////////////////////// certificates script end
 
 
-// Counter Animation
+// Counter Animation start
 const counters = document.querySelectorAll('.counter');
 counters.forEach(counter => {
   counter.innerText = '0';
@@ -100,6 +101,8 @@ counters.forEach(counter => {
 
   updateCounter();
 });
+// Counter Animation end
+
 
 
 // /////////////// clint section 
