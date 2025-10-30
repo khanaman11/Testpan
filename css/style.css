@@ -595,7 +595,7 @@ body {
   width: 120px;
   height: auto;
   margin: 0 15px;
-  animation: slide 20s linear infinite;
+  animation: slide 5s linear infinite;
 }
 
 @keyframes slide {
